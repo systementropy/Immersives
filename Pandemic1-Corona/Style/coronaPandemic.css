@@ -174,7 +174,7 @@ header .right a:nth-child(2){
 	height: 33px;
 }
 .imgCont.europe{
-	margin-top: 4px;
+	/* margin-top: 4px; */
 	width: 600px;
 	height: 533px;
 	/* border: 1px solid #FFFC; */
@@ -184,10 +184,30 @@ header .right a:nth-child(2){
 	background-image: url('../Images/europe_1.png');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 1531px 772px;
-	/* background-attachment: fixed; */
+	background-size: contain;
 	position: sticky;
 	top: 20vh;
+	opacity: 0;
+	background-color: #242424;
+}
+.europe1 .imgCont.europe.active{
+	opacity: 1;
+	transition: opacity 600ms ease;
+}
+.europe1 .imgCont.europe:nth-child(1){
+	background-image: url('../Images/europe_1.png');
+}
+.europe1 .imgCont.europe:nth-child(2){
+	background-image: url('../Images/europe_2.png');
+}
+.europe1 .imgCont.europe:nth-child(3){
+	background-image: url('../Images/europe_3.png');
+}
+.europe1 .imgCont.europe:nth-child(4){
+	background-image: url('../Images/europe_4.png');
+}
+.europe1 .imgCont.europe:nth-child(5){
+	background-image: url('../Images/europe_5.png');
 }
 .firstSign{
 	margin-top: 42px;
