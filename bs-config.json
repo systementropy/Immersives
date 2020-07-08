@@ -1,0 +1,9 @@
+{
+   "notify": false,
+   "server": { "baseDir": "./" },
+   "open": false,
+   "port": 3000,
+   "routes": {
+      "/node_modules": "node_modules"
+    }
+}
