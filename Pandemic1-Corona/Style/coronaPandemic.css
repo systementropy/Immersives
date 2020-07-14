@@ -151,6 +151,7 @@ header .right a:nth-child(2){
 .headline.spanishFlu{
 	margin-top: 78px;
 	position: relative;
+	z-index: 1;
 }
 .headline.spanishFlu h3{
 	color: #000000;
@@ -164,7 +165,7 @@ header .right a:nth-child(2){
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 0;
+	z-index: -1;
 	background: #FFFC;
 }
 .expandContainer.europe{
@@ -441,4 +442,98 @@ header .right a:nth-child(2){
 }
 .indiaFlowContainer .imgCont.indiaFlow:nth-child(5){
 	background-image: url('../Images/week5.jpg');
+}
+
+.indiaSpreadContainer{
+	width: 600px;	
+	height: 435px;
+	margin-bottom: 42px;
+}
+.indiaSpreadContainer .indiaSpread.imgCont:nth-child(1){
+	background-image: url('../Images/static.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 600px;
+	height: 100%;
+	width: 100%;
+}
+.expandContainer.europe.usaSpreadContainer{
+	width: 900px;	
+	height: 1000px;
+	margin-left: calc(-50vw + 450px + 210px);
+	margin-right: calc(-50vw + 450px + 210px);
+	margin-bottom: 26px;
+}
+.usaSpreadContainer .usaSpread.imgCont:nth-child(1){
+	background-image: url('../Images/delay1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 900px;
+	height: 100%;
+	width: 100%;
+}
+.firstSign.nonCap.center{
+	text-align: center;
+}
+.firstSign.nonCap.center p{
+	font: 300 14px/16px Roboto;
+}
+.circleAnimation{
+	position: relative;
+	width: 241px;
+	height: 288px;
+	margin: 15px auto 42px;
+	text-align: center;
+}
+.circleAnimation h3{
+	font: 900 16px/24px Roboto;
+}
+.circleAnimation p{
+	font: 400 14px/24px Roboto;
+}
+.circleAnimation::after{
+	content: '';
+	position: absolute;
+	width: 241px;
+	height: 241px;
+	bottom: 0;
+	left: 50%;
+	background:#242424;
+	border-radius: 50%;
+	transform: translateX(-50%);
+}
+.circleAnimation::before{
+	content: '';
+	position: absolute;
+	width: 195px;
+	height: 195px;
+	bottom: 0;
+	left: 50%;
+	background:#ED213B;
+	z-index: 1;
+	border-radius: 50%;
+	transform: translateX(-50%);
+}
+.data2{
+	position: absolute;
+    color: #FFF;
+    z-index: 2;
+    bottom: 97px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.topImageSlider.end{
+	margin-top: 30px;
+	max-height: 100vh;
+}
+.imgCont.topImgCont{
+	flex-basis: 100%;
+	width: 100vw;
+	height: calc(0.56283941039 * 100vw);
+	max-height: 1451px;
+	max-width: 2578px;
+}
+.end .imgCont.topImgCont:nth-child(1) img{
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
