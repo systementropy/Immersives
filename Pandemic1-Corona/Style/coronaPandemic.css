@@ -35,12 +35,12 @@ body,html,*{
     box-sizing: border-box;
     margin-block-start: 0;
 	margin-block-end: 0;
-	color: #FFFFFF;
+	color: inherit;
 }
 body{
-    /* height: 100vh;
-    width: 100vw; */
-	/* overflow: hidden; */
+    /* height: 100vh;*/
+    width: 100vw; 
+	overflow-x: hidden;
 	text-decoration: none;
     font: 300 33px/40px Roboto;
 }
@@ -55,7 +55,11 @@ body{
 	transform-origin: top;
 	z-index: 1;
 	padding-top: 60px;
+	
+}
+.section{
 	background: #242424;
+	color: #FFF;
 }
 header{
 	position: fixed;
@@ -127,8 +131,9 @@ header .right a:nth-child(2){
 	width: 420px;
 	margin: auto;
 }
+
 .credits{
-	margin-top: 130px;
+	padding-top: 130px;
 	font: 400 12px/18px Roboto;
 	color: #CCCCCC
 }
@@ -149,6 +154,8 @@ header .right a:nth-child(2){
 }
 .headline.spanishFlu h3{
 	color: #000000;
+	text-align: center;
+	z-index: 1;
 	font: 900 24px/36px Merriweather;
 }
 .headline.spanishFlu img{
@@ -157,7 +164,7 @@ header .right a:nth-child(2){
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: -1;
+	z-index: 0;
 	background: #FFFC;
 }
 .expandContainer.europe{
@@ -186,8 +193,10 @@ header .right a:nth-child(2){
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: sticky;
-	top: 20vh;
-	opacity: 0;
+	top: 0;
+	height: 100vh;
+	/* transform: translateY(-50%); */
+	/* opacity: 0; */
 	background-color: #242424;
 }
 .europe1 .imgCont.europe.active{
@@ -214,9 +223,222 @@ header .right a:nth-child(2){
 	font: 900 16px/26px Roboto;
 }
 .expandContainer.europe.europe2{
-	height: 981px;
+	height: 500vh;
 	margin-top: 108px;
 }
 .expandContainer.europe.europe2 h3{
 	margin-left: 90px;
+}
+.europe2 .imgCont.fluFlow{
+	background-image: url('../Images/europe_1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	/* transform: translateY(-50%); */
+	/* opacity: 0; */
+	background-color: #242424;
+}
+.europe2 .imgCont.fluFlow.active{
+	opacity: 1;
+	transition: opacity 600ms ease;
+}
+.europe2 .imgCont.fluFlow:nth-child(1){
+	background-image: url('../Images/flu1.jpg');
+}
+.europe2 .imgCont.fluFlow:nth-child(2){
+	background-image: url('../Images/flu2.jpg');
+}
+.europe2 .imgCont.fluFlow:nth-child(3){
+	background-image: url('../Images/flu3.jpg');
+}
+.europe2 .imgCont.fluFlow:nth-child(4){
+	background-image: url('../Images/flu4.jpg');
+}
+.europe2 .imgCont.fluFlow:nth-child(5){
+	background-image: url('../Images/flu5.jpg');
+}
+
+
+.worldContainer .imgCont.worldFlow{
+	background-image: url('../Images/europe_1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	/* transform: translateY(-50%); */
+	/* opacity: 0; */
+	background-color: #242424;
+}
+.worldContainer .imgCont.worldFlow.active{
+	opacity: 1;
+	transition: opacity 600ms ease;
+}
+.worldContainer .imgCont.worldFlow:nth-child(1){
+	background-image: url('../Images/world1.png');
+}
+.worldContainer .imgCont.worldFlow:nth-child(2){
+	background-image: url('../Images/world2.png');
+}
+.worldContainer .imgCont.worldFlow:nth-child(3){
+	background-image: url('../Images/world3.png');
+}
+.worldContainer .imgCont.worldFlow:nth-child(4){
+	background-image: url('../Images/world4.png');
+}
+.worldContainer .imgCont.worldFlow:nth-child(5){
+	background-image: url('../Images/world5.png');
+}
+.worldContainer .imgCont.worldFlow:nth-child(6){
+	background-image: url('../Images/world6.png');
+}
+.immersiveBg{
+	background-image: url('../Images/Immersive_bg.jpg');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 40vh;
+	margin-left: calc(-50vw + 200px);
+	margin-right: calc(-50vw + 200px);
+	position: relative;
+}
+.immersiveBg::before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 30%;
+	height: 65%;
+	transform: translateX(-50%);
+	background: #242424;
+}
+.section.white{
+	background: #FFF;
+	color: #242424;
+}
+
+.indiacontainer .imgCont.india{
+	background-image: url('../Images/europe_1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: sticky;
+	top: 0;
+	height: 500px;
+	/* transform: translateY(-50%); */
+	/* opacity: 0; */
+	background-color: transparent;
+}
+.indiacontainer .imgCont.india.active{
+	opacity: 1;
+	transition: opacity 600ms ease;
+}
+.indiacontainer .imgCont.india:nth-child(1){
+	background-image: url('../Images/india-spread.jpg');
+}
+.firstSign.nonCap{
+	margin-top: 42px;
+}
+.indiaCompGif{
+	height: 200px;
+	width: 100%;
+	margin-top: 28px;
+	background-image: url('../Images/gif1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: all 100ms ease;
+	animation: aniBG 12s infinite forwards;
+	-webkit-animation: aniBG 12s infinite forwards;
+	-moz-animation: aniBG 12s infinite forwards;
+	
+}
+@keyframes aniBG {
+	0% {background-image: url("../Images/gif1.png");}
+	8% {background-image: url("../Images/gif2.png");}
+	16% {background-image: url("../Images/gif3.png");}
+	24% {background-image: url("../Images/gif4.png");}
+	32% {background-image: url("../Images/gif5.png");}
+	40% {background-image: url("../Images/gif6.png");}
+	48% {background-image: url("../Images/gif7.png");}
+	56% {background-image: url("../Images/gif8.png");}
+	64% {background-image: url("../Images/gif9.png");}
+	72% {background-image: url("../Images/gif10.png");}
+	80% {background-image: url("../Images/gif11.png");}
+	88% {background-image: url("../Images/gif12.png");}
+	100% {background-image: url("../Images/gif12.png");}
+}
+@-moz-keyframes aniBG{
+	0% {background-image: url("../Images/gif1.png");}
+	8% {background-image: url("../Images/gif2.png");}
+	16% {background-image: url("../Images/gif3.png");}
+	24% {background-image: url("../Images/gif4.png");}
+	32% {background-image: url("../Images/gif5.png");}
+	40% {background-image: url("../Images/gif6.png");}
+	48% {background-image: url("../Images/gif7.png");}
+	56% {background-image: url("../Images/gif8.png");}
+	64% {background-image: url("../Images/gif9.png");}
+	72% {background-image: url("../Images/gif10.png");}
+	80% {background-image: url("../Images/gif11.png");}
+	88% {background-image: url("../Images/gif12.png");}
+	100% {background-image: url("../Images/gif12.png");}
+}
+@-webkit-keyframes aniBG{
+	0% {background-image: url("../Images/gif1.png");}
+	8% {background-image: url("../Images/gif2.png");}
+	16% {background-image: url("../Images/gif3.png");}
+	24% {background-image: url("../Images/gif4.png");}
+	32% {background-image: url("../Images/gif5.png");}
+	40% {background-image: url("../Images/gif6.png");}
+	48% {background-image: url("../Images/gif7.png");}
+	56% {background-image: url("../Images/gif8.png");}
+	64% {background-image: url("../Images/gif9.png");}
+	72% {background-image: url("../Images/gif10.png");}
+	80% {background-image: url("../Images/gif11.png");}
+	88% {background-image: url("../Images/gif12.png");}
+	100% {background-image: url("../Images/gif12.png");}
+}
+.postgif{
+	margin-top: 42px;
+}
+.expandContainer.europe.indiaFlowContainer{
+	width: 420px;
+	/* height: 400px; */
+	margin-left: 0;
+	margin-right: 0;
+}
+.indiaFlowContainer .imgCont.indiaFlow{
+	background-image: url('../Images/week1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 483px;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	/* transform: translateY(-50%); */
+	/* opacity: 0; */
+	background-color: transparent;
+}
+.indiaFlowContainer .imgCont.indiaFlow.active{
+	opacity: 1;
+	transition: opacity 600ms ease;
+}
+.indiaFlowContainer .imgCont.indiaFlow:nth-child(1){
+	background-image: url('../Images/week1.jpg');
+}
+.indiaFlowContainer .imgCont.indiaFlow:nth-child(2){
+	background-image: url('../Images/week2.jpg');
+}
+.indiaFlowContainer .imgCont.indiaFlow:nth-child(3){
+	background-image: url('../Images/week3.jpg');
+}
+.indiaFlowContainer .imgCont.indiaFlow:nth-child(4){
+	background-image: url('../Images/week4.jpg');
+}
+.indiaFlowContainer .imgCont.indiaFlow:nth-child(5){
+	background-image: url('../Images/week5.jpg');
 }
