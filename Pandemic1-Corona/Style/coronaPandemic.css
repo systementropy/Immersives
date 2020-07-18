@@ -36,17 +36,18 @@ body,html,*{
     margin-block-start: 0;
 	margin-block-end: 0;
 	color: inherit;
+	scroll-behavior: smooth;
 }
 body{
     /* height: 100vh;*/
-    width: 100vw; 
+    /* width: 100vw;  */
 	overflow-x: hidden;
 	text-decoration: none;
     font: 300 33px/40px Roboto;
 }
 .mainBody{
 	height: max-content;
-    width: 100vw;
+    /* width: 100vw; */
     position: relative;
     margin: auto;
     /* overflow: hidden; */
@@ -157,7 +158,8 @@ header .right a:nth-child(2){
 	color: #000000;
 	text-align: center;
 	z-index: 1;
-	font: 900 24px/36px Merriweather;
+	opacity: 0;
+	font: 900 24px/50px Merriweather;
 }
 .headline.spanishFlu img{
 	position: absolute;
@@ -166,7 +168,7 @@ header .right a:nth-child(2){
 	top: 0;
 	left: 0;
 	z-index: -1;
-	background: #FFFC;
+	/* background: #FFFC; */
 }
 .expandContainer.europe{
 	width: 600px;
@@ -175,7 +177,7 @@ header .right a:nth-child(2){
 	margin-right: -90px;
 }
 .expandContainer.europe.europe1{
-	height: 500vh;
+	height: 600vh;
 }
 .expandContainer h3{
 	font: 900 16px/24px Merriweather;
@@ -200,9 +202,15 @@ header .right a:nth-child(2){
 	/* opacity: 0; */
 	background-color: #242424;
 }
-.europe1 .imgCont.europe.active{
+.expandContainer .imgCont.active:nth-child(n){
 	opacity: 1;
 	transition: opacity 600ms ease;
+}
+.expandContainer .alliances.imgCont.europe.first{
+	opacity: 1;
+}
+.expandContainer .imgCont:nth-child(n+1){
+	opacity: 0;
 }
 .europe1 .imgCont.europe:nth-child(1){
 	background-image: url('../Images/europe_1.png');
@@ -224,11 +232,14 @@ header .right a:nth-child(2){
 	font: 900 16px/26px Roboto;
 }
 .expandContainer.europe.europe2{
-	height: 500vh;
+	height: 600vh;
 	margin-top: 108px;
 }
 .expandContainer.europe.europe2 h3{
 	margin-left: 90px;
+}
+.expandContainer .first{
+	opacity: 1 !important;
 }
 .europe2 .imgCont.fluFlow{
 	background-image: url('../Images/europe_1.png');
@@ -241,6 +252,9 @@ header .right a:nth-child(2){
 	/* transform: translateY(-50%); */
 	/* opacity: 0; */
 	background-color: #242424;
+}
+.europe2 .imgCont.fluFlow.first{
+	opacity: 1;
 }
 .europe2 .imgCont.fluFlow.active{
 	opacity: 1;
@@ -262,7 +276,9 @@ header .right a:nth-child(2){
 	background-image: url('../Images/flu5.jpg');
 }
 
-
+.expandContainer.worldContainer{
+	height: 700vh;
+}
 .worldContainer .imgCont.worldFlow{
 	background-image: url('../Images/europe_1.png');
 	background-position: center;
@@ -273,7 +289,7 @@ header .right a:nth-child(2){
 	height: 100vh;
 	/* transform: translateY(-50%); */
 	/* opacity: 0; */
-	background-color: #242424;
+	/* background-color: #242424; */
 }
 .worldContainer .imgCont.worldFlow.active{
 	opacity: 1;
@@ -298,24 +314,16 @@ header .right a:nth-child(2){
 	background-image: url('../Images/world6.png');
 }
 .immersiveBg{
-	background-image: url('../Images/Immersive_bg.jpg');
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100vw;
-	height: 40vh;
-	margin-left: calc(-50vw + 200px);
-	margin-right: calc(-50vw + 200px);
+	width: 100%;
+	height: 24vw;
+	margin-left: 0;
+	margin-right: 0;
 	position: relative;
-}
-.immersiveBg::before{
-	content: '';
-	position: absolute;
-	left: 50%;
-	width: 30%;
-	height: 65%;
-	transform: translateX(-50%);
+	overflow: hidden;
 	background: #242424;
+}
+.immersiveBg img{
+	
 }
 .section.white{
 	background: #FFF;
@@ -340,6 +348,9 @@ header .right a:nth-child(2){
 }
 .indiacontainer .imgCont.india:nth-child(1){
 	background-image: url('../Images/india-spread.jpg');
+}
+.white .firstSign{
+	color: #242424;
 }
 .firstSign.nonCap{
 	margin-top: 42px;
@@ -411,6 +422,7 @@ header .right a:nth-child(2){
 	/* height: 400px; */
 	margin-left: 0;
 	margin-right: 0;
+	height: 600vh;
 }
 .indiaFlowContainer .imgCont.indiaFlow{
 	background-image: url('../Images/week1.jpg');
@@ -458,19 +470,39 @@ header .right a:nth-child(2){
 	width: 100%;
 }
 .expandContainer.europe.usaSpreadContainer{
-	width: 900px;	
-	height: 1000px;
-	margin-left: calc(-50vw + 450px + 210px);
-	margin-right: calc(-50vw + 450px + 210px);
+	width: 600px;
+	height: 692px;
+	margin-left: calc(210px - 300px);
+	margin-right: calc(210px - 300px);
 	margin-bottom: 26px;
+	position: relative;
+	/* transform: translate(-25%); */
 }
-.usaSpreadContainer .usaSpread.imgCont:nth-child(1){
-	background-image: url('../Images/delay1.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 900px;
+.usaSpreadContainer .usCity.imgCont{
 	height: 100%;
 	width: 100%;
+	z-index: 1;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	transition: all 400ms ease;
+	background: #FFF;
+}
+.usaSpreadContainer .usCity.imgCont.active{
+	opacity: 1;
+}
+.usaSpreadContainer .usCity.imgCont img{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translate(0,0);
+	pointer-events: none;
+}
+.expandContainer .imgCont.usaSpread:nth-child(n){
+	opacity: 1;
 }
 .firstSign.nonCap.center{
 	text-align: center;
@@ -525,15 +557,52 @@ header .right a:nth-child(2){
 .topImageSlider.end{
 	margin-top: 30px;
 	max-height: 100vh;
+	height: auto;
 }
-.imgCont.topImgCont{
+.end .imgCont.topImgCont{
 	flex-basis: 100%;
 	width: 100vw;
 	height: calc(0.56283941039 * 100vw);
 	max-height: 1451px;
 	max-width: 2578px;
 }
-.end .imgCont.topImgCont:nth-child(1) img{
+.end .imgCont.topImgCont.end:nth-child(1) img{
 	left: 50%;
 	transform: translate(-50%,-50%);
+}
+
+
+@media screen and (max-width: 640px){
+	.contentContainer{
+		width: 100%;
+	}
+	.contentContainer>div,.contentContainer>h3{
+		width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.expandContainer.europe,.expandContainer.europe.usaSpreadContainer,.expandContainer.europe.indiaFlowContainer{
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.expandContainer.europe .imgCont{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.usaSpreadContainer .usCity.imgCont{
+		/* top: 0; */
+	}
+}
+@media screen and (max-width: 640px){
+	.contentContainer{
+		width: auto;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.contentContainer>div, .contentContainer>h3{
+		width: 100%;
+	}
 }
