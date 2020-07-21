@@ -1,31 +1,31 @@
 @font-face {
     font-family: Roboto;
-    src: url(/Pandemic1-Corona/Fonts/Roboto/Roboto-Regular.ttf);
+    src: url(../Fonts/Roboto/Roboto-Regular.ttf);
     font-weight: 400;
 }
 @font-face {
     font-family: Roboto;
-    src: url(/Pandemic1-Corona/Fonts/Roboto/Roboto-Light.ttf);
+    src: url(../Fonts/Roboto/Roboto-Light.ttf);
     font-weight: 300;
 }
 @font-face {
     font-family: Roboto;
-    src: url(/Pandemic1-Corona/Fonts/Roboto/Roboto-Black.ttf);
+    src: url(../Fonts/Roboto/Roboto-Black.ttf);
     font-weight: 900;
 }
 @font-face {
     font-family: Roboto;
-    src: url(/Pandemic1-Corona/Fonts/Roboto/Roboto-Bold.ttf);
+    src: url(../Fonts/Roboto/Roboto-Bold.ttf);
     font-weight: 700;
 }
 @font-face {
     font-family: Merriweather;
-    src: url(/Pandemic1-Corona/Fonts/Merriweather/Merriweather-Black.ttf);
+    src: url(../Fonts/Merriweather/Merriweather-Black.ttf);
     font-weight: 900;
 }
 @font-face {
     font-family: Merriweather;
-    src: url(/Pandemic1-Corona/Fonts/Merriweather/Merriweather-Regular.ttf);
+    src: url(../Fonts/Merriweather/Merriweather-Regular.ttf);
     font-weight: 400;
 }
 
