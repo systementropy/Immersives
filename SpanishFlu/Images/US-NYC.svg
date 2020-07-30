@@ -4,14 +4,14 @@
 	 viewBox="0 0 900 1024.59" style="enable-background:new 0 0 900 1024.59;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#242424;}
-	.st1{font-family:'Roboto-Regular';}
-	.st2{font-size:14px;}
+	.st1{font-family:'Roboto';font-weight: 400;}
+	.st2{font-size:16px;}
 	.st3{fill:none;}
-	.st4{font-family:'Merriweather-Black';}
+	.st4{font-family:'Merriweather';font-weight:900;}
 	.st5{font-size:16px;}
 	.st6{fill:none;stroke:#242424;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st7{opacity:0.25;fill:#242424;}
-	.st8{font-family:'Roboto-Light';}
+	.st8{font-family:'Roboto';font-weight: 300;}
 	.st9{opacity:0.15;fill:none;}
 	.st10{opacity:0.15;fill:none;stroke:#242424;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st11{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
@@ -19,7 +19,7 @@
 	.st13{fill:none;stroke:#7C9952;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st14{opacity:0.25;fill:none;}
 	.st15{fill:#F2F2F2;}
-	.st16{font-family:'Roboto-Black';}
+	.st16{font-family:'Roboto';font-weight: 900;}
 	.st17{font-size:28px;}
 	.st18{fill:none;stroke:#DD6E6E;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st19{fill:none;stroke:#2FC0D3;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}

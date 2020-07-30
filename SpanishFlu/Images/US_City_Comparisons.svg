@@ -5,16 +5,16 @@
 <style type="text/css">
 	.st0{fill:none;}
 	.st1{fill:#242424;}
-	.st2{font-family:'Merriweather-Black';}
+	.st2{font-family:'Merriweather';font-weight:900;}
 	.st3{font-size:16px;}
 	.st4{fill:none;stroke:#242424;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st5{opacity:0.25;fill:#242424;}
-	.st6{font-family:'Roboto-Light';}
-	.st7{font-size:14px;}
+	.st6{font-family:'Roboto';font-weight: 300;}
+	.st7{font-size:16px;}
 	.st8{opacity:0.15;fill:none;}
 	.st9{opacity:0.15;fill:none;stroke:#242424;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st10{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-	.st11{font-family:'Roboto-Regular';}
+	.st11{font-family:'Roboto';font-weight: 400;}
 	.st12{opacity:0.25;fill:none;}
 	.st13{fill:none;stroke:#DD6E6E;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st14{fill:none;stroke:#2FC0D3;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -130,6 +130,6 @@
 	<text transform="matrix(1 0 0 1 688.9177 198.5577)" class="st1 st6 st7" id="StL">ST. LOUIS</text>
 </g>
 <rect y="-0.03" class="st17" width="900" height="7.89"/>
-<text transform="matrix(1 0 0 1 375.1814 416.9427)" class="st1 st11 st7">Hover/Tap on trendlines</text>
+<text transform="matrix(1 0 0 1 375.1814 416.9427)" class="st1 st11 st7">Tap on city names</text>
 <rect x="371.5" y="397.53" class="st18" width="158" height="28.93"/>
 </svg>

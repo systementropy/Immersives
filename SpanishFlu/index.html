@@ -12,16 +12,24 @@
 			<a href="https://www.news18.com/"><img src="./Images/News18_logo.svg" alt=""></a>
 		</div>
 		<div class="right">
-			<a href="">Facebook</a>
-			<a href="">Facebook</a>
-			<a href="">Facebook</a>
+			<a href="https://www.facebook.com/cnnnews18/" target="_blank"><span class="fb"></span></a>
+			<a href="https://twitter.com/CNNnews18" target="_blank"><span class="tw"></span></a>
+			<a href="https://www.youtube.com/user/ibnlive" target="_blank"><span class="in"></span></a>
 		</div>
 	</header>
 	<div class="mainBody">
-		<div class="topImageSlider">
-			<div class="imgCont topImgCont"><img src="./Images/img1_left.png" alt=""></div>
-			<div class="imgCont topImgCont"><img src="./Images/img1_center.png" alt=""></div>
-			<div class="imgCont topImgCont"><img src="./Images/img1_right.png" alt=""></div>
+		<div class="topImageSlider" id="topImageSlider">
+			<div class="imgCont topImgCont topSliderImage"><img src="./Images/img1_left.png" alt=""></div>
+			<div class="imgCont topImgCont topSliderImage"><img src="./Images/img1_center.png" alt=""></div>
+			<div class="imgCont topImgCont topSliderImage"><img src="./Images/img1_right.png" alt=""></div>
+			<span class="revealElt revealAni"></span>
+			<span class="revealElt revealAni"></span>
+			<span class="revealElt revealAni"></span>
+			<span class="revealElt revealAni"></span>
+			<p class="revealElt revealHor"></p>
+			<p class="revealElt revealHor"></p>
+			<p class="revealElt revealHor"></p>
+			<p class="revealElt revealHor"></p>
 		</div>
 		<div class="section">
 			<div class="contentContainer">
@@ -39,34 +47,46 @@
 					<img src="./Images/Heading.svg" alt="">
 				</div>
 				<div class="expandContainer europe europe1" id="europe1">
-					<!-- <h3>Europe 1914</h3> -->
-					<div class="alliances imgCont europe first"></div>
-					<div class="alliances imgCont europe"></div>
-					<div class="alliances imgCont europe"></div>
-					<div class="alliances imgCont europe"></div>
-					<div class="alliances imgCont europe"></div>
+					<!-- <h3>Europe 1914</h3> <div class="US-Phil usCity imgCont"><img src="./Images/US-Phil.svg" alt=""></div>-->
+					<div class="alliances imgCont europe first">
+						<object id="svg1" data="./Images/europe_1.svg" type="image/svg+xml"></object>
+					</div>
+					<div class="second alliances imgCont europe">
+						<object id="svg1" data="./Images/europe_2.svg" type="image/svg+xml"></object>
+					</div>
+					<div class="third alliances imgCont europe">
+						<object id="svg1" data="./Images/europe_3.svg" type="image/svg+xml"></object>
+					</div>
+					<div class="fourth alliances imgCont europe">
+						<object id="svg1" data="./Images/europe_4.svg" type="image/svg+xml"></object>
+					</div>
+					<div class="fifth alliances imgCont europe">
+						<object id="svg1" data="./Images/europe_5.svg" type="image/svg+xml"></object>
+					</div>
 				</div>
 				<h3 class="firstSign">THE FIRST SIGNS</h3>
 				<div class="text text2">
-					Six months before the armistice was signed between warring sides to bring down the curtains on World War I in 1918, an ‘unusually fatal’ respiratory disease caught the attention of physicians at a British training camp in Eaples in France. Nearly half of those showing influenza like clinical symptoms were succumbing to the infections. So the Spanish Flu started in France? Some Research seems to suggest that.
+					<p>Six months before the armistice was signed between warring sides to bring down the curtains on World War I in 1918, an ‘unusually fatal’ respiratory disease caught the attention of physicians at a British training camp in Eaples in France.</p>
+					<p>Nearly half of those showing influenza like clinical symptoms were succumbing to the infections.</p>
+					<p>So the Spanish Flu started in France? Some Research seems to suggest that.</p>
 				</div>
-				<div class="expandContainer europe europe2">
+				<div class="expandContainer europe europe2" id="fluFlowContainer">
 					<div class="first fluFlow imgCont"></div>
-					<div class="fluFlow imgCont"></div>
-					<div class="fluFlow imgCont"></div>
-					<div class="fluFlow imgCont"></div>
-					<div class="fluFlow imgCont"></div>
+					<div class="second fluFlow imgCont"></div>
+					<div class="third fluFlow imgCont"></div>
+					<div class="fourth fluFlow imgCont"></div>
+					<div class="fifth fluFlow imgCont"></div>
 				</div>
 				<div class="text text2">
 					Spain remained neutral through the entire conflict. When the war ended, Portuguese soldiers who were exposed to the virus in France infected others as they passed through the Basque territory on their way home. The health outbreak got widespread coverage in the Spanish media when the King Alfonso XIII got the illness. The disease thus acquired a name: the Spanish Flu.
 				</div>
-				<div class="expandContainer europe worldContainer">
+				<div class="expandContainer europe worldContainer" id="worldFlowContainer">
 					<div class="first worldFlow imgCont"></div>
-					<div class="worldFlow imgCont"></div>
-					<div class="worldFlow imgCont"></div>
-					<div class="worldFlow imgCont"></div>
-					<div class="worldFlow imgCont"></div>
-					<div class="worldFlow imgCont"></div>
+					<div class="second worldFlow imgCont"></div>
+					<div class="third worldFlow imgCont"></div>
+					<div class="fourth worldFlow imgCont"></div>
+					<div class="fifth worldFlow imgCont"></div>
+					<div class="sixth worldFlow imgCont"></div>
 				</div>
 				<div class="text text2">
 					By the fall of 1918, soldiers from other allied nations had carried the pathogen to nearly all continents to trigger one of the deadliest pandemics in the recorded history of humans.
@@ -81,22 +101,22 @@
 				<h3 class="firstSign">LESSONS FROM THE SPANISH PANDEMIC</h3>
 				<div class="expandContainer europe indiacontainer" id="">
 					<div class="first alliances imgCont india"></div>
-				</div>
-				<h3 class="firstSign nonCap">Spanish Flu in India</h3>
-				<div class="text text2">
-					First cases of the Spanish Flu in India were reported in Bombay, the port of arrival for soldiers from Europe after WW I.
+				</div> 
+				<h3 class="third firstSign nonCap">Spanish Flu in India</h3>
+				<div class="fourth text text2">
+					First cases offifth  the Spanish Flu in India were reported in Bombay, the port of arrival for soldiers from Europe after WW I.
 				</div>
 				<div class="indiaCompGif">
 				</div>
 				<div class="text text2 postgif">
 					Over the next two years the virus would slowly spread to other provinces killing between 12.5 to 20 million people consuming nearly 4% of the population. Every second infected person succumbed to the disease.
 				</div>
-				<div class="expandContainer europe indiaFlowContainer">
+				<div class="expandContainer europe indiaFlowContainer" id="indiaFlowContainer">
 					<div class="first indiaFlow imgCont"></div>
-					<div class="indiaFlow imgCont"></div>
-					<div class="indiaFlow imgCont"></div>
-					<div class="indiaFlow imgCont"></div>
-					<div class="indiaFlow imgCont"></div>
+					<div class="second indiaFlow imgCont"></div>
+					<div class="third indiaFlow imgCont"></div>
+					<div class="fourth indiaFlow imgCont"></div>
+					<div class="fifth indiaFlow imgCont"></div>
 				</div>
 				<h3 class="firstSign nonCap">Lessons from Spanish Flu</h3>
 				<div class="text text2">
@@ -104,9 +124,9 @@
 				</div>
 				<div class="expandContainer europe indiaSpreadContainer">
 					<div class="first indiaSpread imgCont"></div>
-				</div>
-				<div class="text text2">
-					Like 1919 Spanish Flu, most of the cases in the first wave of Covid-19 are being reported from major ports of entry.
+				</div> 
+				<div class="third text text2">
+					Like 1919 Spanishfourth  Flu, most of the cases in the first wave of Covid-19 are being reported from major ports of entryfifth .
 				</div>
 				<h3 class="firstSign nonCap">Story from US</h3>
 				<div class="text text2">
@@ -126,16 +146,16 @@
 								<style type="text/css">
 									.st0{fill:none;}
 									.st1{fill:#242424;}
-									.st2{font-family:'Merriweather-Black';}
+									.st2{font-family:'Merriweather';font-weight:900;}
 									.st3{font-size:16px;}
 									.st4{fill:none;stroke:#242424;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 									.st5{opacity:0.25;fill:#242424;}
-									.st6{font-family:'Roboto-Light';}
-									.st7{font-size:14px;}
+									.st6{font-family:Roboto;font-weight:300;font-size: 14px;}
+									.st7{font-size:16px;}
 									.st8{opacity:0.15;fill:none;}
 									.st9{opacity:0.15;fill:none;stroke:#242424;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 									.st10{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-									.st11{font-family:'Roboto-Regular';}
+									.st11{font-family:Roboto;font-weight:400;}
 									.st12{opacity:0.25;fill:none;}
 									.st13{fill:none;stroke:#DD6E6E;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 									.st14{fill:none;stroke:#2FC0D3;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -251,15 +271,23 @@
 									<text transform="matrix(1 0 0 1 688.9177 198.5577)" class="st1 st6 st7 US-StLHover">ST. LOUIS</text>
 								</g>
 								<rect y="-0.03" class="st17" width="900" height="7.89"/>
-								<text transform="matrix(1 0 0 1 375.1814 416.9427)" class="st1 st11 st7">Hover/Tap on trendlines</text>
-								<rect x="371.5" y="397.53" class="st18" width="158" height="28.93"/>
+								<text transform="matrix(1 0 0 1 375.1814 416.9427)" class="st1 st11 st7">Tap on city names</text>
+								<rect x="371.5" y="397.53" class="st18" width="140" height="28.93"/>
 								</svg>
 
 					</div>
-					<div class="US-Phil usCity imgCont"><img src="./Images/US-Phil.svg" alt=""></div>
-					<div class="US-SF usCity imgCont"><img src="./Images/US-SF.svg" alt=""></div>
-					<div class="US-StL usCity imgCont"><img src="./Images/US-StL.svg" alt=""></div>
-					<div class="US-NYC usCity imgCont"><img src="./Images/US-NYC.svg" alt=""></div>
+					<div class="US-Phil usCity imgCont">
+						<object id="svg1" data="./Images/US-Phil.svg" type="image/svg+xml"></object>
+					</div>
+					<div class="US-SF usCity imgCont">
+						<object id="svg1" data="./Images/US-SF.svg" type="image/svg+xml"></object>
+					</div>
+					<div class="US-StL usCity imgCont">
+						<object id="svg1" data="./Images/US-StL.svg" type="image/svg+xml"></object>
+					</div>
+					<div class="US-NYC usCity imgCont">
+						<object id="svg1" data="./Images/US-NYC.svg" type="image/svg+xml"></object>
+					</div>
 					
 				</div>
 				<div class="text text2"><p>A recent study shows San Francisco, St Louis, Milwaukee and Kansas City which introduced these measures early reduced transmission rates by up to 30% to 50% and saved millions of lives.</p><p>New York City which is worst hit by the current Covid-19 crisis was quick to adopt preventive measures in 1919. The state rigidly enforced social distancing and enforced staggered business hours.</p></div>
@@ -292,6 +320,108 @@
 			<div class="imgCont topImgCont"><img src="./Images/end.png" alt=""></div>
 		</div>
 	</div>
+	<div class="mainBody mainBodyYF">
+		<div class="topImageSlider">
+			<div class="headliner"><img src="./Images/Yellow Fever Heading.svg"></div>
+			<div class="imgCont topImgCont"><img src="./Images/topBg.png" alt=""></div>
+		</div>
+		<div class="section white">
+			<div class="contentContainer">
+				<h3 class="firstSign">THE LOUISIANA PURCHASE</h3>
+				<div class="text text2">
+					The United States doubled its territorial sovereignty over North America by affecting the Louisiana Purchase in 1803 for a sum of $15 million. Opinions vary on why Napoleon Bonaparte agreed to return 830 thousand square miles of land across the Mississippi Valley to President Jefferson Thomson for a song.
+				</div>
+				<div class="expandContainer lousiana" id="">
+					<img src="./Images/lousiana.png" alt="" srcset="">
+				</div>
+				<h3 class="firstSign">A Distress Sale?</h3>
+				<div class="text text2">
+					Some historians believe the sale deed was signed in haste after French colonisers registered high mortality rates amongst its soldiers from a hitherto unknown disease in parts of Alabama, Louisiana, Mississippi, and Texas.
+				</div>
+				
+			</div>
+		</div>
+		<div class="immersiveBg">
+			<img src="./Images/bg.jpg" alt="">
+		</div>
+		<div class="section ">
+			<div class="contentContainer">
+				<h3 class="firstSign nonCap nonCapMig">THE GREAT MIGRATION AND THE AMERICAN DREAM</h3>
+				<div class="text text2">
+					Between 1803 and 1860 more than 550 thousand whites migrated to New Orleans from Germany, Ireland and Northern States within the US. The American dream lured in migrants to the Mississippi valley. Domestic slave trade flourished. So did sugar and cotton plantations.
+				</div>
+				<h3 class="firstSign nonCap stylized">Migration to New Orleans (1803-1860)</h3>
+				<div class="expandContainer europe newOrleansFlowContainer" id="newOrleansFlowContainer">
+					<div class="first newOrleansFlow imgCont"></div>
+					<div class="second newOrleansFlow imgCont"></div>
+					<div class="third newOrleansFlow imgCont"></div>
+					<div class="fourth newOrleansFlow imgCont"></div>
+					<div class="fifth newOrleansFlow imgCont"></div>
+					<div class="sixth newOrleansFlow imgCont"></div>
+					<div class="seventh newOrleansFlow imgCont"></div>
+					<div class="eighth newOrleansFlow imgCont"></div>
+					<div class="ninth newOrleansFlow imgCont"></div>
+					<div class="tenth newOrleansFlow imgCont"></div>
+					<div class="eleventh newOrleansFlow imgCont"></div>
+					<div class="twelfth newOrleansFlow imgCont"></div>
+				</div>
+
+				<h3 class="firstSign nonCap ">PROGRESS AND PANDEMIC</h3>
+				<div class="text text2 greaterp">
+					<p>With progress came the pandemic.</p>
+					<p>The burgeoning population turned into a death trap in cities with little or no public health infrastructure. The contagion flourished in high population density neighbourhoods. Up to 50 percent of newcomers died violent deaths from yellow fever- oozing blood from nose and mouth due to multiple internal haemorrhages.</p>
+					<p>In multiple waves, this contagion would ravage these tropical and sub-tropical plains for the next 100 years killing about eight percent of the region’s urban population, and as many as 30 percent of recent migrants. In 1853, the year of New Orleans’ worst epidemic, about one-tenth of the city’s population succumbed to the Yellow Fever.</p>
+				</div>
+				<div class="expandContainer europe tableuContainer">
+					<img src="./Images/tableu.png" alt="" srcset="">
+					<p>This tableau shows horrific scenes from the epidemic, when yellow fever engulfed not just New Orleans but the entire region—stretching as far north as Memphis, Tennessee. The central image shows Canal Street, normally the city’s busiest thoroughfare, desolate except for hearses. The image above it shows two homeless men ailing on a park bench as a wealthy man walks briskly away. Many of these scenes show that yellow fever impacted people differently according to ethnicity, gender, race, and class. “The Great Yellow Fever Scourge. — Incidents of Its Horrors in the Most Fatal Districts of the Southern States,” wood engraving from Frank Leslie’s Illustrated Newspaper, September 28, 1878.</p>
+				</div>
+				<h3 class="firstSign nonCap ">A PERVERSE CAPITALISM</h3>
+				<div class="text text2 greaterp">
+					<p>Co-mingled with racism and slavery, the Yellow Fever engendered a perverse form of capitalism in Deep South. This new social order celebrated those who survived the disease and thus acquired long term immunity from the virus.</p>
+					<p>Survival from the Yellow fever was a certificate of greater life expectancy. Natural inoculation catapulted a section of white population to the higher echelons of social and economic hierarchy. Banks offered them loans.</p>
+					<p>Their businesses flourished. “Immunocapital” soon became the most the most sought-after currency.</p>
+				</div>
+				<div class="expandContainer europe capitalismContainer">
+					<img src="./Images/capitalism.png" alt="" srcset="">
+					<p>The scene shows both capitalist energy and climate-induced lethargy: while some of the men grade cotton and keep books, others read the Picayune and languish in the subtropical heat. This was the first painting Degas sold to a museum. Edgar Degas, A Cotton Office in New Orleans, 1873.</p>
+				</div>
+				<h3 class="firstSign nonCap ">PERILS OF IMMUNITY PASSPORTS FOR COVID-19</h3>
+				<div class="text text2">WHO has warned against the perils of adopting any such measures in an attempt to reboot the economy in haste.</div>
+				<div class="text rBorderLeft">
+					<p class="merri">At this point in the pandemic, there is not enough evidence about the effectiveness of antibody-mediated immunity to guarantee the accuracy of an “immunity passport” or “risk-free certificate.” People who assume that they are immune to a second infection because they have received a positive test result may ignore public health advice. The use of such certificates may therefore increase the risks of continued transmission.</p>
+					<p class="sub">WHO: "Immunity passports" in the context of COVID-19; April 24, 2020</p>
+				</div>
+				<div class="text text2 greaterp">
+					<p>Firstly, there is little empirical evidence to confirm people who get infected are immune to Covid-19. South Korea has reported multiple cases of re-infection.<br>Studies show up to 20% of the Covid-19 patients have small or weak anti-bodies. There is little research on how long the acquired immunity to the virus may last.</p>
+					<p>Secondly, most sensitive pathological investigations can give negative false tests. So there is no guarantee that a person who has tested negative has not been exposed to the virus. (RT PCR Tests in China from lower respiratory organs have shown 75% accuracy)</p>
+				</div>
+				<div class="expandContainer europe testSARSContainer">
+					<h3>Variation in False-Negative Rate of RT-PCR–Based SARS-CoV-2 Tests by Time Since Exposure</h3>
+					<p>PROBABILITY OF A FALSE-NEGATIVE RESULT IN AN INFECTED PERSON</p>
+					<img src="./Images/testSARS.jpg" alt="" srcset="">
+				</div>
+				<div class="text text2 finalNormal">
+					<p>And finally, immunity passport may usher in a system which would reward and promote those who survive the infection. As in southern provinces in the US in 17th century, this may sow seeds of a perverse form of capitalism which would not only pull a section of the society to the bottom of the social and economic order, it might even nudge the poor and displaced to seek immunity through exposure to the disease.</p>
+				</div>
+				<div class="text text2 endWhite">
+					<h3>From the paper:<br>NECROPOLIS: YELLOW FEVER, IMMUNITY, AND CAPITALISM IN THE DEEP SOUTH, 1800-1860 , Kathryn Meyer McAllister Olivarius History Wolfson College University of Oxford</h3>
+					<p>Yellow fever proved highly lethal in Gibraltar, Cádiz, and the Caribbean. Arriving on mainland North America as early as 1699, it periodically struck with staggering violence. It killed about 5,000 people in Philadelphia in 1793 (one-tenth of the city’s population; a further 17,000 fled the city), 5,000 more in 1798 in both Boston and New York, and about 1,000 in Baltimore in 1800.</p>
+					<p>The first yellow fever epidemic on the Gulf Coast occurred in 1796, coinciding with Louisiana’s first successful sugar harvest.</p>
+					<p>An 1803 census suggests New Orleans inherited by the United States counted a population of 8,050 residents, inclusive of all races and 700 people “not domiciled.”</p>
+					<p>New Orleans’ population doubled in size in 1809 with the influx of asylum-seekers from St. Domingue to 18,000, and continued to grow, swelling from 46,000 in 1830 to 102,000 in 1840 through European, American, and forced black migration.</p>
+					<p>In 1860, the city’s population surpassed 168,000, mostly through the addition of tens of thousands of Irish people escaping famine and Germans fleeing the upheaval of 1848.</p>
+					<p>Mobile, Alabama, a port city about 140 miles to the west of New Orleans, suffered an especially fatal yellow fever season in 1819. 274 people died out of 1,300 inhabitants, amounting to 21 percent of the population.</p>
+					<p>Historian K. David Patterson estimated that between 1817 and 1905, yellow fever killed 40,171 people in New Orleans – ten times more than the next most-afflicted city, Charleston.</p>
+					<p>My own estimate (author of the paper) is that yellow fever killed at least 150,000 Orleanians between 1803 and the Civil War, and probably many more.</p>
+					<p>In 1833, Maria Inskeep stood at her window in New Orleans and counted 10 funeral processions in one hour.</p>
+					<p>The Charity Hospital, the primary repository for New Orleans’ poor and indigent, admitted at least 122,317 patients during the 1830s and 40s, the majority during the fever months.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
 	<script src="./Scripts/jquery.js"></script>
 	<script src="./Scripts/main.js"></script>
 </body>
