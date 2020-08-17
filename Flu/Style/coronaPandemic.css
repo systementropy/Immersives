@@ -41,7 +41,6 @@ body,html,*{
 body.noScroll{
 	overflow-y: hidden;
 }
-
 body{
     /* height: 100vh;*/
     /* width: 100vw;  */
@@ -246,7 +245,7 @@ header .right a:nth-child(2){
 }
 .topImageSlider{
 	display: flex;
-	height: calc(100vh - 60px);
+	height: 100vh;
 	position: relative;
 }
 div#topImageSlider{
@@ -597,11 +596,11 @@ div#topImageSlider{
 }
 
 .indiacontainer .imgCont.india{
-	/* background-image: url('../Images/europe_1.png');
+	background-image: url('../Images/europe_1.png');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain; */
-	position: static;
+	background-size: contain;
+	position: absolute;
 	top: 0;
 	height: 500px;
 	width: 100%;
@@ -614,7 +613,7 @@ div#topImageSlider{
 	transition: opacity 600ms ease;
 }
 .indiacontainer .imgCont.india:nth-child(1){
-	background-image: url('../Images/india-spread.svg');
+	background-image: url('../Images/india-spread.jpg');
 }
 .white .firstSign{
 	color: #242424;
@@ -1577,9 +1576,6 @@ h3.firstSign.nonCap.nonCapMig{
 .mainBodyAIDS .endWhite p:nth-child(3){
 	margin-top: 0;
 }
-.noShow{
-	display: none;
-}
 @media screen and (max-width: 900px){
 	.mainBodyYF .section.white{width: 100%;}
 	
@@ -1638,7 +1634,7 @@ h3.firstSign.nonCap.nonCapMig{
 		margin-right: 0;
 	}
 	.expandContainer.europe .fluFlow.imgCont{
-		height: calc(1.20833333333 * (100vw - 30px));
+		height: calc(1.26 * (100vw - 30px));
 		background-size: contain;
 	}
 	.expandContainer.europe .indiaFlow.imgCont{
@@ -1842,5 +1838,8 @@ h3.firstSign.nonCap.nonCapMig{
 	}
 	.expandContainer.europe.europe2{
 		height: auto;
+	}
+	.expandContainer.europe .imgCont.first{
+		opacity: 1 !important;
 	}
 }
