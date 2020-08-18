@@ -467,9 +467,22 @@
 				}
 			})
 		}else{
-			function alliances(container){
-				console.log('here');
-				gsap.timeline().to(container,{opacity:1,stagger:1.2,duration:0.4});
+			const didPlayObj = {
+
+			}
+			function alliances(container,childrenCount,key){
+				if(didPlayObj[key]){
+					$('body').removeClass('noScroll')
+				}else{
+					console.log('here'+container);
+					$('body').addClass('noScroll')
+					gsap.timeline()
+					.to(container,{opacity:1,stagger:0.8,duration:0.4})
+					setTimeout(()=>{$('body').removeClass('noScroll');didPlayObj[key] = true;},800*childrenCount)
+				}
+				
+				// .call($('body').removeClass('noScroll'))
+				// .then($('body').removeClass('noScroll'));
 			}
 			
 			// $('.alliances.imgCont').style({opacity:0})
@@ -478,7 +491,7 @@
 					trigger: "#europe1",
 					start:("center center"),
 					end:"bottom top",
-					onUpdate:() =>alliances('.alliances.imgCont')
+					onUpdate:() =>alliances('.alliances.imgCont',$('#europe1').children('.imgCont').length,"europe1")
 				}
 			})
 			gsap.timeline({
@@ -486,7 +499,7 @@
 					trigger: "#fluFlowContainer",
 					start:("center center"),
 					end:"bottom top",
-					onUpdate:() =>alliances('.fluFlow.imgCont')
+					onUpdate:() =>alliances('.fluFlow.imgCont',$('#fluFlowContainer').children('.imgCont').length,"fluFlowContainer")
 				}
 			})
 			gsap.timeline({
@@ -494,7 +507,7 @@
 					trigger: "#worldFlowContainer",
 					start:("center center"),
 					end:"bottom top",
-					onUpdate:() =>alliances('.worldFlow.imgCont')
+					onUpdate:() =>alliances('.worldFlow.imgCont',$('#worldFlowContainer').children('.imgCont').length,"worldFlowContainer")
 				}
 			})
 			gsap.timeline({
@@ -502,7 +515,7 @@
 					trigger: "#indiaFlowContainer",
 					start:("center center"),
 					end:"bottom top",
-					onUpdate:() =>alliances('.indiaFlow.imgCont')
+					onUpdate:() =>alliances('.indiaFlow.imgCont',$('#indiaFlowContainer').children('.imgCont').length,"indiaFlowContainer")
 				}
 			})
 			gsap.timeline({
@@ -510,7 +523,7 @@
 					trigger: "#newOrleansFlowContainer",
 					start:("center center"),
 					end:"bottom top",
-					onUpdate:() =>alliances('.newOrleansFlow.imgCont')
+					onUpdate:() =>alliances('.newOrleansFlow.imgCont',$('#newOrleansFlowContainer').children('.imgCont').length,"newOrleansFlowContainer")
 				}
 			})
 			

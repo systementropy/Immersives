@@ -40,6 +40,10 @@ body,html,*{
 }
 body.noScroll{
 	overflow-y: hidden;
+	pointer-events: none;
+}
+body.noScroll *{
+	pointer-events: none;
 }
 body{
     /* height: 100vh;*/
@@ -1759,7 +1763,7 @@ h3.firstSign.nonCap.nonCapMig{
 	}
 	.mainBodyYF .tableuContainer p,.mainBodyYF .capitalismContainer p{
 		margin: 0 15px;
-		text-align: center;
+		/* text-align: center; */
 	}
 	.mainBodyYF .testSARSContainer h3,.mainBodyYF .testSARSContainer p{
 		width: calc(100% - 30px);
