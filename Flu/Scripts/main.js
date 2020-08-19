@@ -4,26 +4,29 @@
 	$('.indiaFlow.imgCont').css({opacity:0})
 	$('.newOrleansFlow.imgCont').css({opacity:0})
 	gsap.registerPlugin(ScrollTrigger)
-	function init(){
+	function init(label){
 		
 		gsap.timeline({repeat:-1}).to('.animEndImg',{opacity:0,stagger:2,ease:"Power3.easeInOut",duration:4})
-
-		// gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
-		// .from('.topSliderImage',{zIndex:1,opacity:0.3,stagger:0.2,y:100,scale:1.1,filter:"blur(15px)",ease:"Power3.easeInOut",duration:1})
-		// .to('.headingText',{y:'-50%',opacity:1})
-		// .to('.topSliderImage',{width:0,stagger:1,ease:"linear",duration:0.6})
-		// .to('.topSliderImage10',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage11',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage12',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage7',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage8',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage9',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage4',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage5',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage6',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage1',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage2',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:1})
-		// .to('.topSliderImage3',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:1})
+		if(label === 'init'){
+			gsap.timeline()
+				.to('#topImageSlider',{opacity:1,duration:1})
+				.from('.topSliderImage',{zIndex:1,opacity:0.3,y:100,scale:1.1,filter:"blur(15px)",ease:"Power3.easeInOut",duration:1})
+				.to('.headingText',{y:'-50%',opacity:1})
+				.to('.topSliderImage',{width:0,stagger:1,ease:"linear",duration:0.6})
+				.to('.topSliderImage10',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage11',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage12',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage7',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage8',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage9',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage4',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage5',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage6',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage1',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage2',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:1})
+				.to('.topSliderImage3',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:1})
+		}
+		
 		if(window.innerWidth>640){
 			let example = gsap.timeline({
 				scrollTrigger: {
@@ -532,7 +535,7 @@
 	window.addEventListener('load',function(){
 		var loader = document.getElementById("loader");
 		loader?loader. parentNode. removeChild(loader):''
-		init();
+		init('init');
 	});
 	window.addEventListener('resize',function(){
 		init();
