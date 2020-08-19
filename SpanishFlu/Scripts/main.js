@@ -456,37 +456,26 @@
 
 			
 			gsap.to(".timeline", {
-				// xPercent: -(100-1*(((window.innerWidth - 600)*100)/$('#timeline').width())), 
-				// xPercent: -100,
-				x: -(11067-(window.innerWidth - 600)/2)+'px',
+				x: -(11067-600)+'px',
 				ease: "none",
 				scrollTrigger: {
 					trigger: ".timeline",
 					start: "top -350%",
 					end: "+=400%",
 					toggleClass: {targets: ".fixedtimeline", className: "active"},
-					//   end: () => innerWidth * 14,
 					scrub: true,
-					//   pin: true,
-					//   anticipatePin: 1
 				}
 			})
 			gsap.to(".timelineOpen", {
-				// xPercent: -100, 
-				// x: 0,
-				// y: 180,
+				xPercent: -100, 
 				opacity: 0,
 				ease: "linear",
 				scrollTrigger: {
 					trigger: ".timelineOpen",
-					start: "top -320%",
-					// end: () => innerWidth * 14,
+					start: "top -351%",
 					end: "+=1",
 					toggleClass:'active',
 					scrub: true,
-					// toggleActions:"restart none reverse reset",
-					//   pin: true,
-					//   anticipatePin: 1
 				}
 			})
 		}else{
@@ -551,37 +540,26 @@
 				}
 			})
 			gsap.to(".timeline", {
-				// xPercent: -(100-1*(((window.innerWidth - 600)*100)/$('#timeline').width())), 
-				// xPercent: -100,
-				x: -(11067-(window.innerWidth - 600)/2)+'px',
+				x: -(11067-window.innerWidth)+'px',
 				ease: "none",
 				scrollTrigger: {
 					trigger: ".timeline",
-					start: "top 0%",
-					end: "+=400%",
+					start: "top -40%",
+					end: "+=350%",
 					toggleClass: {targets: ".fixedtimeline", className: "active"},
-					//   end: () => innerWidth * 14,
-					scrub: true,
-					//   pin: true,
-					//   anticipatePin: 1
+					scrub: true
 				}
 			})
 			gsap.to(".timelineOpen", {
-				// xPercent: -100, 
-				// x: 0,
-				// y: 180,
+				xPercent: -200, 
 				opacity: 0,
-				ease: "linear",
+				ease: "ease",
 				scrollTrigger: {
 					trigger: ".timelineOpen",
-					start: "top 0%",
-					// end: () => innerWidth * 14,
-					end: "+=1",
+					start: "top -30%",
+					end: "+=1%",
 					toggleClass:'active',
-					scrub: true,
-					// toggleActions:"restart none reverse reset",
-					//   pin: true,
-					//   anticipatePin: 1
+					scrub: true
 				}
 			})
 		}
@@ -611,22 +589,13 @@
 				.then(loadOthers);
 			}else{
 				gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
-				.from('.topSliderImage',{zIndex:1,opacity:0.3,stagger:0.2,y:100,scale:1.1,filter:"blur(15px)",ease:"Power3.easeInOut",duration:1})
 				.to('.headingText',{y:'-50%',opacity:1})
 				.to('.topSliderImage',{width:0,stagger:0.6,ease:"linear",duration:0.8})
-				.to('.topSliderImage10',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage11',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage12',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage7',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage8',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage9',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage4',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage5',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage6',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage1',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage2',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:0.6})
-				.to('.topSliderImage3',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:0.6})
-				.then(loadOthers);
+				.to('.topSliderImage:nth-child(2n+1)',{left:'auto',right:0,height:'50%',width:0,top:'50%',ease:"linear",duration:0.1})
+				.to('.topSliderImage:nth-child(2n)',{left:'auto',height:'50%',width:0,top:'0%',ease:"linear",duration:0.1})
+				.to('.topSliderImage',{width:'100%',ease:"Power3.easeInOut",stagger:0.8,duration:0.6,'background-attachment':'unset','background-size':'cover',zIndex:-20})
+				.then(loadOthers)
+				
 			}
 			
 		}else{
@@ -647,7 +616,7 @@
 			$('.newOrleansFlow.imgCont').css({opacity:0})
 		}
 		
-		init('init1');
+		init('init');
 	});
 	window.addEventListener('resize',function(){
 		init();
