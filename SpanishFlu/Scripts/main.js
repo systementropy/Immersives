@@ -571,9 +571,10 @@
 		if(label === 'init'){
 			if(window.innerWidth>640){
 				gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
-				.from('.topSliderImage',{zIndex:1,opacity:0.1,y:100,scale:1.1,filter:"blur(15px)",ease:"Power3.easeInOut",duration:0.6})
+				.from('.topSliderImage',{zIndex:1,opacity:0,ease:"Power3.easeInOut",duration:0.6})
 				.to('.headingText',{y:'-50%',opacity:1})
 				.to('.topSliderImage',{width:0,stagger:0.6,ease:"linear",duration:0.8})
+				.call(loadOthers())
 				.to('.topSliderImage10',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:0.4})
 				.to('.topSliderImage11',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:0.4})
 				.to('.topSliderImage12',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:0.4})
@@ -586,7 +587,7 @@
 				.to('.topSliderImage1',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:0.4})
 				.to('.topSliderImage2',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:0.4})
 				.to('.topSliderImage3',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:0.4})
-				.then(loadOthers);
+				
 			}else{
 				gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
 				.to('.headingText',{y:'-50%',opacity:1})
