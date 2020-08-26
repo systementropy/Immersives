@@ -86,7 +86,7 @@
 					pin: true,  
 					pinSpacing:true,
 					start: "top 100px", // When the top of the trigger reaches the top of the viewport
-					end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
+					// end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
 					scrub: true, 
 					// markers: true,
 					toggleClass: 'active',
@@ -100,7 +100,7 @@
 					pin: true,  
 					pinSpacing:true,
 					start: "top 100px", // When the top of the trigger reaches the top of the viewport
-					end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
+					// end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
 					scrub: true, 
 					// markers: true,
 					toggleClass: 'active',
@@ -114,7 +114,7 @@
 					pin: true,  
 					pinSpacing:true,
 					start: "top 100px", // When the top of the trigger reaches the top of the viewport
-					end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
+					// end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
 					scrub: true, 
 					// markers: true,
 					toggleClass: 'active',
@@ -128,7 +128,7 @@
 					pin: true,  
 					pinSpacing:true,
 					start: "top 100px", // When the top of the trigger reaches the top of the viewport
-					end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
+					// end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
 					scrub: true, 
 					// markers: true,
 					toggleClass: 'active',
@@ -366,7 +366,7 @@
 			gsap.from("#newOrleansFlowContainer .second",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .second',
-					start: 'top -240%',
+					start: 'top -270%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -375,7 +375,7 @@
 			gsap.from("#newOrleansFlowContainer .third",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .third',
-					start: 'top -250%',
+					start: 'top -280%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -384,7 +384,7 @@
 			gsap.from("#newOrleansFlowContainer .fourth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .fourth',
-					start: 'top -260%',
+					start: 'top -290%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -393,7 +393,7 @@
 			gsap.from("#newOrleansFlowContainer .fifth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .fifth',
-					start: 'top -270%',
+					start: 'top -300%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -402,7 +402,7 @@
 			gsap.from("#newOrleansFlowContainer .sixth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .sixth',
-					start: 'top -280%',
+					start: 'top -310%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -411,7 +411,7 @@
 			gsap.from("#newOrleansFlowContainer .seventh",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .seventh',
-					start: 'top -290%',
+					start: 'top -320%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -420,7 +420,7 @@
 			gsap.from("#newOrleansFlowContainer .eighth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .eighth',
-					start: 'top -300%',
+					start: 'top -330%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -429,7 +429,7 @@
 			gsap.from("#newOrleansFlowContainer .ninth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .ninth',
-					start: 'top -310%',
+					start: 'top -340%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -438,7 +438,7 @@
 			gsap.from("#newOrleansFlowContainer .tenth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .tenth',
-					start: 'top -320%',
+					start: 'top -350%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -447,7 +447,7 @@
 			gsap.from("#newOrleansFlowContainer .eleventh",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .eleventh',
-					start: 'top -330%',
+					start: 'top -360%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true

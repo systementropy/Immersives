@@ -1069,46 +1069,14 @@ A38C43 */
 	z-index: -1;
 	/* background: #FFFC; */
 }
-.mainBodyYF .expandContainer.lousiana{
-	width: 600px;
-	margin-top: 36px;
-	margin-left: -90px;
-	margin-right: -90px;
-}
-.mainBodyYF .expandContainer.lousiana img{
-	width: 100%;
-}
-.mainBodyYF .expandContainer.europe{
+.expandContainer.lousiana{
 	width: 600px;
 	margin-top: 40px;
-	margin-bottom: 40px;
 	margin-left: -90px;
 	margin-right: -90px;
+	height: 604px;
 }
 
-.mainBodyYF .expandContainer h3{
-	font: 900 16px/24px Merriweather;
-	height: 33px;
-}
-.mainBodyYF .imgCont.europe{
-	/* margin-top: 4px; */
-	width: 600px;
-	height: 533px;
-	/* border: 1px solid #FFFC; */
-	
-}
-.mainBodyYF .europe1 .imgCont.europe{
-	background-image: url('../Images/europe_1.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: sticky;
-	top: 0;
-	height: 100vh;
-	/* transform: translateY(-50%); */
-	/* opacity: 0; */
-	background-color: #242424;
-}
 .mainBodyYF .expandContainer .imgCont.active:nth-child(n){
 	opacity: 1;
 	transition: opacity 600ms ease;
@@ -1173,10 +1141,22 @@ h3.firstSign.nonCap.nonCapMig{
 .expandContainer.europe.newOrleansFlowContainer{
 	width: 600px;
 	height: 600px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	margin-left: -90px;
 	margin-right: -90px;
 }
-
+.expandContainer.europe.newOrleansFlowContainer.active{
+	padding: 40px 0;
+}
+#newOrleansFlowContainer::before{
+	content: 'Migration to New Orleans (1803-1860)';
+	position: absolute;
+	left: 0;
+	top: 0px;
+	font: 900 16px/26px Roboto;
+	z-index: 10;
+}
 
 .newOrleansFlowContainer .imgCont.newOrleansFlow{
 	position: absolute;
@@ -1807,7 +1787,7 @@ h3.firstSign.nonCap.nonCapMig{
 		width: 100%;
 		height: auto;
 	}
-	.mainBodyYF .contentContainer>div, .mainBodyYF .contentContainer>h3{
+	/* .mainBodyYF .contentContainer>div, .mainBodyYF .contentContainer>h3{
 		max-width: 100%;
 	}
 	.mainBodyYF .expandContainer.europe.testSARSContainer,.mainBodyYF .expandContainer.lousiana,.mainBodyYF .expandContainer.europe.tableuContainer,.mainBodyYF .expandContainer.europe.capitalismContainer,.mainBodyYF .expandContainer.europe.newOrleansFlowContainer{
@@ -1815,10 +1795,10 @@ h3.firstSign.nonCap.nonCapMig{
 		margin-left: -15px;
 		margin-right: -15px;
 		max-width: unset;
-	}
-	.mainBodyYF .expandContainer.europe.newOrleansFlowContainer .imgCont{
+	} */
+	/* .mainBodyYF .expandContainer.europe.newOrleansFlowContainer .imgCont{
 		height: 100vw;
-	}
+	} */
 	.mainBodyYF .expandContainer.europe.testSARSContainer{
 		margin-bottom: -65px;
 	}
