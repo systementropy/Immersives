@@ -76,7 +76,9 @@
 		}
 	}
 	function loadOthers() {
+		
 		$('.noShow').show(0);
+		
 		if(window.innerWidth>640){
 			gsap.timeline({repeat:-1}).to('.animEndImg',{opacity:0,stagger:2,ease:"Power3.easeInOut",duration:4})
 			let example = gsap.timeline({
@@ -86,7 +88,7 @@
 					pin: true,  
 					pinSpacing:true,
 					start: "top 100px", // When the top of the trigger reaches the top of the viewport
-					// end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
+					end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
 					scrub: true, 
 					// markers: true,
 					toggleClass: 'active',
@@ -100,7 +102,7 @@
 					pin: true,  
 					pinSpacing:true,
 					start: "top 100px", // When the top of the trigger reaches the top of the viewport
-					// end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
+					end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
 					scrub: true, 
 					// markers: true,
 					toggleClass: 'active',
@@ -114,7 +116,7 @@
 					pin: true,  
 					pinSpacing:true,
 					start: "top 100px", // When the top of the trigger reaches the top of the viewport
-					// end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
+					end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
 					scrub: true, 
 					// markers: true,
 					toggleClass: 'active',
@@ -128,7 +130,7 @@
 					pin: true,  
 					pinSpacing:true,
 					start: "top 100px", // When the top of the trigger reaches the top of the viewport
-					// end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
+					end: "top -50%", // When the bottom of the trigger goes 150% past the top of the scroller
 					scrub: true, 
 					// markers: true,
 					toggleClass: 'active',
@@ -318,7 +320,7 @@
 			gsap.from("#indiaFlowContainer .second",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#indiaFlowContainer .second',
-					start: 'top -150%',
+					start: 'top -165%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -327,7 +329,7 @@
 			gsap.from("#indiaFlowContainer .third",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#indiaFlowContainer .third',
-					start: 'top -160%',
+					start: 'top -175%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -336,7 +338,7 @@
 			gsap.from("#indiaFlowContainer .fourth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#indiaFlowContainer .fourth',
-					start: 'top -170%',
+					start: 'top -185%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -345,7 +347,7 @@
 			gsap.from("#indiaFlowContainer .fifth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#indiaFlowContainer .fifth',
-					start: 'top -180%',
+					start: 'top -195%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -366,7 +368,7 @@
 			gsap.from("#newOrleansFlowContainer .second",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .second',
-					start: 'top -270%',
+					start: 'top -231%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -375,7 +377,7 @@
 			gsap.from("#newOrleansFlowContainer .third",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .third',
-					start: 'top -280%',
+					start: 'top -241%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -384,7 +386,7 @@
 			gsap.from("#newOrleansFlowContainer .fourth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .fourth',
-					start: 'top -290%',
+					start: 'top -251%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -393,7 +395,7 @@
 			gsap.from("#newOrleansFlowContainer .fifth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .fifth',
-					start: 'top -300%',
+					start: 'top -261%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -402,7 +404,7 @@
 			gsap.from("#newOrleansFlowContainer .sixth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .sixth',
-					start: 'top -310%',
+					start: 'top -271%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -411,7 +413,7 @@
 			gsap.from("#newOrleansFlowContainer .seventh",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .seventh',
-					start: 'top -320%',
+					start: 'top -281%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -420,7 +422,7 @@
 			gsap.from("#newOrleansFlowContainer .eighth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .eighth',
-					start: 'top -330%',
+					start: 'top -291%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -429,7 +431,7 @@
 			gsap.from("#newOrleansFlowContainer .ninth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .ninth',
-					start: 'top -340%',
+					start: 'top -301%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -438,7 +440,7 @@
 			gsap.from("#newOrleansFlowContainer .tenth",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .tenth',
-					start: 'top -350%',
+					start: 'top -311%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -447,7 +449,7 @@
 			gsap.from("#newOrleansFlowContainer .eleventh",{opacity:0,duration:400,ease:'none',
 				scrollTrigger:{
 					trigger:'#newOrleansFlowContainer .eleventh',
-					start: 'top -360%',
+					start: 'top -321%',
 					end: '+=1%',
 					scrub: 1,
 					// markers: true
@@ -471,11 +473,12 @@
 				opacity: 0,
 				ease: "linear",
 				scrollTrigger: {
-					trigger: ".timelineOpen",
-					start: "top -351%",
-					end: "+=1",
+					trigger: ".timeline",
+					start: "top -310%",
+					end: "+=1px",
 					toggleClass:'active',
 					scrub: true,
+					// markers: true
 				}
 			})
 		}else{
@@ -484,12 +487,15 @@
 
 			}
 			function alliances(container,childrenCount,key){
+				// ScrollTrigger.refresh()
+				// ScrollTrigger.update()
 				if(didPlayObj[key]){
 					$('body').removeClass('noScroll')
 				}else{
 					console.log('here'+container);
-					$('body').addClass('noScroll')
-					gsap.timeline()
+					// $('body').addClass('noScroll')
+					gsap.timeline({repeat: -1,repeatDelay: 3})
+					.from(container,{opacity:0,stagger:0,duration:0})
 					.to(container,{opacity:1,stagger:0.8,duration:0.4})
 					setTimeout(()=>{$('body').removeClass('noScroll');didPlayObj[key] = true;},800*childrenCount)
 				}
@@ -504,7 +510,7 @@
 					trigger: "#europe1",
 					start:("center center"),
 					end:"bottom top",
-					onUpdate:() =>alliances('.alliances.imgCont',$('#europe1').children('.imgCont').length,"europe1")
+					onUpdate:() =>alliances('.alliancesOfEurope.imgCont',$('#europe1').children('.imgCont').length,"europe1")
 				}
 			})
 			gsap.timeline({
@@ -570,11 +576,11 @@
 		
 		if(label === 'init'){
 			if(window.innerWidth>640){
-				gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
+				var desktopLoad = gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
 				.from('.topSliderImage',{zIndex:1,opacity:0,ease:"Power3.easeInOut",duration:0.6})
 				.to('.headingText',{y:'-50%',opacity:1})
 				.to('.topSliderImage',{width:0,stagger:0.6,ease:"linear",duration:0.8})
-				.call(loadOthers())
+				// .call(loadOthers())
 				.to('.topSliderImage10',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:0.4})
 				.to('.topSliderImage11',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:0.4})
 				.to('.topSliderImage12',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:0.4})
@@ -587,20 +593,22 @@
 				.to('.topSliderImage1',{width:'35%','background-attachment':'unset',left:0,ease:"Power3.easeInOut",duration:0.4})
 				.to('.topSliderImage2',{width:'30%','background-attachment':'unset',left:'35%',ease:"Power3.easeInOut",duration:0.4})
 				.to('.topSliderImage3',{width:'35%','background-attachment':'unset','background-position':'left',left:'65%',ease:"Power3.easeInOut",duration:0.4})
+				desktopLoad.call(loadOthers, null, 6)
 				
 			}else{
-				gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
+				loadOthers()
+				var mobLoad = gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
 				.to('.headingText',{y:'-50%',opacity:1})
 				.to('.topSliderImage',{width:0,stagger:0.6,ease:"linear",duration:0.8})
 				.to('.topSliderImage:nth-child(2n+1)',{left:'auto',right:0,height:'50%',width:0,top:'50%',ease:"linear",duration:0.1})
 				.to('.topSliderImage:nth-child(2n)',{left:'auto',height:'50%',width:0,top:'0%',ease:"linear",duration:0.1})
 				.to('.topSliderImage',{width:'100%',ease:"Power3.easeInOut",stagger:0.8,duration:0.6,'background-attachment':'unset','background-size':'cover',zIndex:-20})
-				.then(loadOthers)
-				
+				// .then(loadOthers)
+				mobLoad.call(loadOthers, null, 6)
 			}
 			
 		}else{
-			loadOthers();
+			
 		}
 		
 		
@@ -610,7 +618,7 @@
 		var loader = document.getElementById("loader");
 		loader?loader. parentNode. removeChild(loader):'';
 		if(window.innerWidth<=640){
-			$('.alliances.imgCont').css({opacity:0})
+			$('.alliancesOfEurope.imgCont').css({opacity:0})
 			$('.fluFlow.imgCont').css({opacity:0})
 			$('.worldFlow.imgCont').css({opacity:0})
 			$('.indiaFlow.imgCont').css({opacity:0})

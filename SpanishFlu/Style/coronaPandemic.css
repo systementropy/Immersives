@@ -29,7 +29,7 @@
     font-weight: 400;
 } */
 
-body,html,*{
+body,html,p,div{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,9 +37,10 @@ body,html,*{
 	margin-block-end: 0;
 	color: inherit;
 	scroll-behavior: smooth;
-	font-family: 'Merriweather', serif;
-	font-family: 'Roboto', sans-serif;
+	font-family: Merriweather, serif;
+	font-family: Roboto, sans-serif;
 }
+
 object{
 	pointer-events: none;
 }
@@ -435,6 +436,7 @@ div#topImageSlider{
 }
 .expandContainer.europe.europe1{
 	transform: translateY(0%);
+	height: 553px;
 	/* height: calc(1 * 533px); */
 }
 .expandContainer h3{
@@ -500,7 +502,7 @@ div#topImageSlider{
 	font: 900 16px/26px Roboto;
 }
 .expandContainer.europe.europe2{
-	height: auto;
+	height: 763px;
 }
 .expandContainer.europe.europe2 h3{
 	margin-left: 90px;
@@ -773,7 +775,7 @@ div#topImageSlider{
 	content: 'Tap/Hover on city names';
 	position: absolute;
 	left: 50%;
-	top: 100%;
+	top: 150%;
 	transform: translateX(-50%);
 	font: 300 14px/21px Roboto;
 	border: 1px solid #7a7a7a;
@@ -1157,7 +1159,7 @@ h3.firstSign.nonCap.nonCapMig{
 	position: absolute;
 	left: 50%;
 	top: 0px;
-	font: 900 16px/26px Roboto;
+	font: 900 16px/24px Merriweather;
 	z-index: 10;
 	width: 420px;
 	transform: translateX(-50%);
@@ -1274,7 +1276,7 @@ h3.firstSign.nonCap.nonCapMig{
 .testSARSContainerYF.testSARSContainer h3{
 	padding-right: 85px;
 	height: auto;
-	font: 900 16px/24px Merriweather;
+	font: 900 16px/19px Merriweather;
 	position: absolute;
 	top: 0;
 }
@@ -1282,7 +1284,7 @@ h3.firstSign.nonCap.nonCapMig{
 	padding-right: 85px;
 	font: 400 13px/24px Roboto;
 	position: absolute;
-	top: 55px;
+	top: 60px;
 }
 .finalNormalYF.finalNormal{
 	margin: 37px auto 41px;
@@ -1467,7 +1469,7 @@ h3.firstSign.nonCap.nonCapMig{
 #cToPlayFade object{
 	pointer-events: none;
 	width: 250px;
-    height: 100px;
+    height: 112px;
     left: 50%;
     top: 50%;
     position: absolute;
@@ -1615,6 +1617,12 @@ h3.firstSign.nonCap.nonCapMig{
 	}
 }
 @media screen and (max-width: 640px){
+	.addonAIDS.addon{
+		margin: 15px auto 0;
+	}
+	.expandContainer.europe .imgCont{
+		opacity: 0;
+	}
 	.imgCont.topImgCont.topSliderImage:nth-child(1){
 		background-image: url('../Images/Slider/Mobile/1_gettyimages-1208902754.jpg');
 		background-repeat: no-repeat;
@@ -1733,16 +1741,88 @@ h3.firstSign.nonCap.nonCapMig{
 		margin-right: auto;
 	}
 	.expandContainer.europe,.expandContainer.europe.usaSpreadContainer,.expandContainer.europe.indiaFlowContainer{
+		width: calc(100% + 30px);
+		height: auto;
+		margin-left: -15px;
+		margin-right: 0;
+	}
+	#europe1::before {
+		content: 'Europe 1914';
+		position: absolute;
+		left: 5px;
+		top: 0;
+		font: 900 16px/16px Merriweather;
+		z-index: 10;
+		width: 10px;
+	}
+	#fluFlowContainer::before {
+		content: 'Diffusion of Influenza Within & From Europe';
+		position: absolute;
+		left: 20px;
+		top: 6px;
+		font: 900 16px/24px Merriweather;
+		z-index: 10;
+		width: 195px;
+		background: #242424;
+	}
+	#fluFlowContainer::after{
+		content: 'Autumn 1918';
+		position: absolute;
+		left: 20px;
+		top: 60px;
+		font: 400 16px/24px Roboto;
+		z-index: 10;
+		width: 195px;
+		background: #242424;
+	}
+	#indiaFlowContainer::before{
+		content: 'How it spread across India';
+		position: absolute;
+		left: 0;
+		top: 2%;
+		font: 900 16px/24px Merriweather;
+		z-index: 10;
+		width: 100%;
+		background: #FFF;
+		text-align: center;
+		height: 6%;
+	}
+	#worldFlowContainer::before {
+		content: 'Worldwide Diffusion of Influenza';
+		position: absolute;
+		left: 14%;
+		top: -5px;
+		font: 900 16px/24px Merriweather;
+		z-index: 10;
+		width: 100%;
+		background: #242424;
+	}
+	#worldFlowContainer::after {
+		content: 'Second Wave: Autumn 1918';
+		position: absolute;
+		left: 14%;
+		top: 17px;
+		font: 400 14px/24px Roboto;
+		z-index: 10;
+		width: auto;
+		background: #242424;
+	}
+	
+	.first.alliances.imgCont.india {
+		opacity: 1 !important;
+	}
+	.rBorderLeftYF.rBorderLeft{
+		width: calc( 100% + 15px );
+    	margin-left: -15px;
+	}
+	.expandContainer.europe .imgCont{
 		width: 100%;
 		height: auto;
 		margin-left: 0;
 		margin-right: 0;
 	}
-	.expandContainer.europe .imgCont{
-		width: 100%;
-		height: calc(0.91833333333 * (100vw - 30px));
-		margin-left: 0;
-		margin-right: 0;
+	.alliances.alliancesOfEurope.imgCont.europe.first{
+		height: calc(100vw * 0.927);
 	}
 	.newOrleansFlowContainer .imgCont.newOrleansFlow{
 		height: 100%;
@@ -1752,17 +1832,19 @@ h3.firstSign.nonCap.nonCapMig{
 		max-width: 100%;
 	}
 	.expandContainer.europe .fluFlow.imgCont{
-		height: calc(1.20833333333 * (100vw - 30px));
+		height: calc(100vw * 1.34306569343);
 		background-size: contain;
 	}
 	.expandContainer.europe .indiaFlow.imgCont{
-		height: calc(1.05544147844 * (100vw - 30px));
+		height: calc(100vw * 1.03649635036);
 		background-size: contain;
 	}
 	.expandContainer.europe .worldFlow.imgCont{
-		height: calc(0.7 * (100vw - 30px));
+		/* height: calc(0.7 * (100vw - 30px)); */
+		height: auto;
 		background-size: cover;
 	}
+	
 	.mainBodyYF .expandContainer.europe .imgCont{
 		height: calc(0.9 * (100vw - 30px));
 		background-size: cover;
@@ -1831,7 +1913,7 @@ h3.firstSign.nonCap.nonCapMig{
 		margin-top: 40px;
 		margin-left: -15px;
 		margin-right: -15px;
-		height: auto;
+		height: 100vw;
 	}
 	.mainBodyYF .expandContainer.lousiana,.mainBodyYF .expandContainer.europe.usaSpreadContainer,.expandContainer.europe.newOrleansFlowContainer,.tableuContainerYF.expandContainer.europe.tableuContainer,.capitalismContainerYF.expandContainer.europe.capitalismContainer,.testSARSContainerYF.expandContainer.europe.testSARSContainer{
 		width: calc(100% + 30px);
@@ -1840,6 +1922,9 @@ h3.firstSign.nonCap.nonCapMig{
 	}
 	.expandContainer.europe.newOrleansFlowContainer,.tableuContainerYF.expandContainer.europe.tableuContainer{
 		height: auto;
+	}
+	.expandContainer.europe.newOrleansFlowContainer{
+		height: calc(100vw * 1.0097323601);
 	}
 	.tableuContainerYF.tableuContainer p{
 		margin: 0 15px 0;
@@ -1941,7 +2026,7 @@ h3.firstSign.nonCap.nonCapMig{
 	}
 	.timeline{
 		background-position: left center;
-		height: 460vh;
+		height: 500vh;
 	}
 	.mainBodyYF .immersiveBg{
 		width: 100%;
