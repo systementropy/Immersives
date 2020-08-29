@@ -1,21 +1,12 @@
-// $(document).ready(function(){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	var video=document.getElementById("home_vid");   
+	var video=document.getElementById("vdosInt");   
+	let observer = new IntersectionObserver((entries, observer) => { 
+		entries.forEach(entry => {
+			if(entry.intersectionRatio!==1 && player!==undefined){
+				player.pauseVideo();
+			}
+		});
+	}, {threshold: 1} );
+	observer.observe(document.querySelector('.videoHIV'));
 	// SAKET: Please link to following: https://www.youtube.com/watch?v=U219eUIZ7Qo
 	var vidHeight; var vidWidth;
 	if ($(window).width()>=900) {
@@ -33,6 +24,7 @@
 
 	var player;
 	function onYouTubePlayerAPIReady() {
+		
 		vidWidth = vidWidth.toString();
 		vidHeight = vidHeight.toString();
 		
@@ -75,8 +67,10 @@
 			player.playVideo();
 		}
 	}
+	// const video=document.getElementById("vdosInt");   
+	
 	function loadOthers() {
-		
+		// window.scrollTo(0,0);
 		$('.noShow').show(0);
 		
 		if(window.innerWidth>640){
@@ -492,10 +486,8 @@
 				if(didPlayObj[key]){
 					// $('body').removeClass('noScroll')
 				}else{
-					console.log('here'+container);
 					didPlayObj[key] = true;
 					// $('body').addClass('noScroll')
-					console.log($(container));
 					// gsap.timeline({repeat: -1,repeatDelay: 3})
 					// .from(container,{opacity:0,stagger:0, duration: 0.2})
 					// .to(container,{opacity:1,stagger:{
@@ -574,10 +566,8 @@
 	}
 	gsap.registerPlugin(ScrollTrigger)
 	function init(label){
-		if ('scrollRestoration' in history) {
-			history.scrollRestoration = 'manual';
-		}
-		window.scrollTo(0,0);
+		
+		// window.scrollTo(0,0);
 		if(label === 'init'){
 			if(window.innerWidth>640){
 				var desktopLoad = gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
@@ -600,7 +590,7 @@
 				desktopLoad.call(loadOthers, null, 6)
 				
 			}else{
-				loadOthers()
+				// loadOthers()
 				var mobLoad = gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})
 				.to('.headingText',{y:'-50%',opacity:1})
 				.to('.topSliderImage',{width:0,stagger:0.6,ease:"linear",duration:0.8})
@@ -608,7 +598,7 @@
 				.to('.topSliderImage:nth-child(2n)',{left:'auto',height:'50%',width:0,top:'0%',ease:"linear",duration:0.1})
 				.to('.topSliderImage',{width:'100%',ease:"Power3.easeInOut",stagger:0.8,duration:0.6,'background-attachment':'unset','background-size':'cover',zIndex:-20})
 				// .then(loadOthers)
-				mobLoad.call(loadOthers, null, 6)
+				mobLoad.call(loadOthers, null, 3)
 			}
 			
 		}else{

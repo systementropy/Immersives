@@ -462,7 +462,7 @@ div#topImageSlider{
 	background-repeat: no-repeat;
 	background-size: contain; */
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	height: 100%;
 	width: 100%;
 	pointer-events: none;
@@ -1392,7 +1392,7 @@ h3.firstSign.nonCap.nonCapMig{
 	width: 11067px;
 	top: 100px !important;
 	background: linear-gradient(45deg, #f35621,#d7d745,#D623A1);
-	background-image: url('../Images/svg/AIDStimeline.svg');
+	background-image: url('../Images/svg/AIDSTimelineNew.svg');
 	background-size: auto 405px;
 	background-repeat: no-repeat;
 	background-position: calc(50vw - 300px) center;
@@ -1427,7 +1427,13 @@ h3.firstSign.nonCap.nonCapMig{
 	color: #888888;
     border: 1px solid #888888;
 	font: 900 16px/31px Merriweather;
-	
+	opacity: 0;
+}
+.fixedtimeline object{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .timelineOpenInner {
     position: absolute;
