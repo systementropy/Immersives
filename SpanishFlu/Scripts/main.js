@@ -469,9 +469,11 @@
 				}
 			})
 			gsap.to(".timelineOpen", {
-				xPercent: -100, 
+				// xPercent: -100, 
 				opacity: 0,
 				ease: "linear",
+				duration: 0.4,
+				ease: "easeOut",
 				scrollTrigger: {
 					trigger: ".timeline",
 					start: "top -310%",
@@ -487,62 +489,61 @@
 
 			}
 			function alliances(container,childrenCount,key){
-				// ScrollTrigger.refresh()
-				// ScrollTrigger.update()
 				if(didPlayObj[key]){
-					$('body').removeClass('noScroll')
+					// $('body').removeClass('noScroll')
 				}else{
 					console.log('here'+container);
+					didPlayObj[key] = true;
 					// $('body').addClass('noScroll')
-					gsap.timeline({repeat: -1,repeatDelay: 3})
-					.from(container,{opacity:0,stagger:0,duration:0})
-					.to(container,{opacity:1,stagger:0.8,duration:0.4})
-					setTimeout(()=>{$('body').removeClass('noScroll');didPlayObj[key] = true;},800*childrenCount)
+					console.log($(container));
+					// gsap.timeline({repeat: -1,repeatDelay: 3})
+					// .from(container,{opacity:0,stagger:0, duration: 0.2})
+					// .to(container,{opacity:1,stagger:{
+					// 		each: 0.4,
+					// 		ease: "power2.inOut",
+					// 		// repeat: -1 // Repeats immediately, not waiting for the other staggered animations to finish
+					// },duration:0.4})
+					const mobAniTimeline = gsap.timeline({repeat: -1,repeatDelay: 3})
+					mobAniTimeline
+						.from(container,{opacity:0,stagger:0, duration: 0.2,amount: 0.2})
+						.to(container,{opacity:1,stagger:0.8, duration: 0.4})
 				}
 				
-				// .call($('body').removeClass('noScroll'))
-				// .then($('body').removeClass('noScroll'));
 			}
 			
-			// $('.alliances.imgCont').style({opacity:0})
 			gsap.timeline({
 				scrollTrigger: {
 					trigger: "#europe1",
-					start:("center center"),
-					end:"bottom top",
-					onUpdate:() =>alliances('.alliancesOfEurope.imgCont',$('#europe1').children('.imgCont').length,"europe1")
+					start:("bottom bottom"),
+					onUpdate:() =>alliances('.alliancesOfEurope',$('#europe1').children('.alliancesOfEurope').length,"europe1")
 				}
 			})
 			gsap.timeline({
 				scrollTrigger: {
 					trigger: "#fluFlowContainer",
-					start:("center center"),
-					end:"bottom top",
-					onUpdate:() =>alliances('.fluFlow.imgCont',$('#fluFlowContainer').children('.imgCont').length,"fluFlowContainer")
+					start:("bottom bottom"),
+					onUpdate:() =>alliances('.fluFlow',$('#fluFlowContainer').children('.fluFlow').length,"fluFlowContainer")
 				}
 			})
 			gsap.timeline({
 				scrollTrigger: {
 					trigger: "#worldFlowContainer",
-					start:("center center"),
-					end:"bottom top",
-					onUpdate:() =>alliances('.worldFlow.imgCont',$('#worldFlowContainer').children('.imgCont').length,"worldFlowContainer")
+					start:("bottom bottom"),
+					onUpdate:() =>alliances('.worldFlow',$('#worldFlowContainer').children('.worldFlow').length,"worldFlowContainer")
 				}
 			})
 			gsap.timeline({
 				scrollTrigger: {
 					trigger: "#indiaFlowContainer",
-					start:("center center"),
-					end:"bottom top",
-					onUpdate:() =>alliances('.indiaFlow.imgCont',$('#indiaFlowContainer').children('.imgCont').length,"indiaFlowContainer")
+					start:("bottom bottom"),
+					onUpdate:() =>alliances('.indiaFlow',$('#indiaFlowContainer').children('.indiaFlow').length,"indiaFlowContainer")
 				}
 			})
 			gsap.timeline({
 				scrollTrigger: {
 					trigger: "#newOrleansFlowContainer",
-					start:("center center"),
-					end:"bottom top",
-					onUpdate:() =>alliances('.newOrleansFlow.imgCont',$('#newOrleansFlowContainer').children('.imgCont').length,"newOrleansFlowContainer")
+					start:("bottom bottom"),
+					onUpdate:() =>alliances('.newOrleansFlow',$('#newOrleansFlowContainer').children('.newOrleansFlow').length,"newOrleansFlowContainer")
 				}
 			})
 			gsap.to(".timeline", {
@@ -573,7 +574,10 @@
 	}
 	gsap.registerPlugin(ScrollTrigger)
 	function init(label){
-		
+		if ('scrollRestoration' in history) {
+			history.scrollRestoration = 'manual';
+		}
+		window.scrollTo(0,0);
 		if(label === 'init'){
 			if(window.innerWidth>640){
 				var desktopLoad = gsap.timeline().to('#topImageSlider',{opacity:1,duration:1})

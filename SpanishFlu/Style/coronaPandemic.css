@@ -29,7 +29,7 @@
     font-weight: 400;
 } */
 
-body,html,p,div{
+body,html,p,div,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -82,8 +82,9 @@ header{
 	z-index: 10;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 10px;
+	padding: 0 15px;
 	background: #000000;
+	box-sizing: border-box;
 }
 header .left, header .right{
 	height: 40px;
@@ -1046,7 +1047,11 @@ A38C43 */
 }
 .headliner.headlinerAIDS{
 	margin-top: 40px;
+	max-width: 100%;
+	width: 420px;
+	margin: 40px auto 0;
 }
+
 .headlinerYF.headliner img{
 	height: 85px;
 }
@@ -1350,7 +1355,7 @@ h3.firstSign.nonCap.nonCapMig{
 }
 .addonAIDS.addon{
 	max-width: 390px;
-	margin: 26px auto 0;
+	margin: 15px auto 0;
 	text-align: center;
 }
 .europe.ravageHIV{
@@ -1578,7 +1583,13 @@ h3.firstSign.nonCap.nonCapMig{
 	width: 420px;
 	margin: auto;
 	max-width: 100%;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	align-items: flex-end;
+	font: 400 12px/12px Roboto;
+}
+.enCredits img {
+    height: 32px;
+    margin-bottom: 0px;
 }
 .noShow,.topImageSliderYF.topImageSlider{
 	display: none;
@@ -1821,7 +1832,8 @@ h3.firstSign.nonCap.nonCapMig{
 		margin-left: 0;
 		margin-right: 0;
 	}
-	.alliances.alliancesOfEurope.imgCont.europe.first{
+	
+	div#europe1,.alliances.alliancesOfEurope.imgCont.europe.first{
 		height: calc(100vw * 0.927);
 	}
 	.newOrleansFlowContainer .imgCont.newOrleansFlow{
@@ -1840,9 +1852,12 @@ h3.firstSign.nonCap.nonCapMig{
 		background-size: contain;
 	}
 	.expandContainer.europe .worldFlow.imgCont{
-		/* height: calc(0.7 * (100vw - 30px)); */
+		height: calc(100vw * 0.800486618);
 		height: auto;
 		background-size: cover;
+	}
+	div#worldFlowContainer{
+		height: calc(100vw * 0.800486618);
 	}
 	
 	.mainBodyYF .expandContainer.europe .imgCont{
